@@ -1,9 +1,16 @@
 #include <iostream>
 
+using namespace std;
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    char myCharacter = 'A';
+    cout << myCharacter << endl;
 
+    int myInt;
+    cin >> myInt;
+    cout << myInt;
 
+    system("pause>0");
 }
 
