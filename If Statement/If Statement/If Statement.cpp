@@ -2,18 +2,13 @@
 using namespace std;
 int main()
 {
-    int a = 5;
-    int b = 4;
+    int a = 1;
+    int b = 13;
     int c = 6;
-    if (a == b)
+    if (a < b)
     {
-        cout << "Hello World";
+        cout << "a is less than b" << endl;
     }
-    else
-    {
-        cout << "a ! b";
-    }
-    cout << "\n";
 
     system("pause");
 }
