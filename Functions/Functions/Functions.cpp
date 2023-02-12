@@ -2,7 +2,22 @@
 
 using namespace std;
 
-void welcome()
+void welcome();
+void printNumber(int numberToPrint);
+int add(int x, int y);
+
+char getYesNo();
+void PrintResponse(char printToResponse);
+
+void AskYesOrNoQuestion();
+
+int main()
+{
+    AskYesOrNoQuestion();
+    system("pause");
+}
+
+void welcome() 
 {
     cout << "Welcome!!" << endl;
 }
@@ -18,17 +33,25 @@ int add(int x, int y)
     result = x + y;
     return result;
 }
+char getYesNo()
+{
+    cout << "N or Y.\n";
+    char response;
+    cin >> response;
+    return response;
+}
+void PrintResponse(char printToResponse)
+{
+    cout << printToResponse << endl;
+}
 
-int main()
+void AskYesOrNoQuestion()
 {
     welcome();
 
-    printNumber(14);
+    char answer = getYesNo();
+    PrintResponse(answer);
 
-    int number;
-    number = add(15, 16);
-
-    printNumber(number);
-
-    system("pause");
 }
+
+
