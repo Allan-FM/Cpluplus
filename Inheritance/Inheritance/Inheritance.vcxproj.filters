@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="InheritanceP1.cpp">
+    <ClCompile Include="Inheritance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
