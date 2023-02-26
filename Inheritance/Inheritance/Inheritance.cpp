@@ -24,11 +24,15 @@ public:
 	void Speak();
 };
 
+class Corgi : public Dog
+{
+
+};
+
 int main()
 {
-	Dog dog("Spot",5,7);
-	
-	dog.Speak();
+	Corgi corgi;
+	corgi.Speak();
 
 	system("pause");
 }
@@ -61,9 +65,9 @@ Dog::Dog()
 {
 	cout << "Dog is born!" << endl;
 }
-Dog::Dog(string name, int age, int numb_limbs)
+Dog::Dog(string name, int age, int numb_limbs) : Animal(name,age, numb_limbs)
 {
-	Animal(name, age, numb_limbs);
+	
 }
 void Dog:: Speak()
 {
